@@ -941,7 +941,10 @@ header {
 
     .roadOutline {
         opacity: .9;
-        width: 100%;
+        min-width: 300px;
+        width: fit-content;
+        object-fit: cover;
+        /*background-repeat: no-repeat;*/
     }
 }
 

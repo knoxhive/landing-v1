@@ -6,21 +6,29 @@
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/mobile.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" type="image/png" href="./assets/knoxhive.png">
     <script src="index.js"></script>
 </head>
 <body>
 <div>
    <header>
        <nav class="nav">
-           <img src="./assets/LogoSmall.png" alt="" class="logo">
+           <a href="#">
+               <img src="./assets/LogoSmall.png" alt="" class="logo">
+           </a>
            <div class="navMiddle">
-               <span>Tokenomics</span>
-               <span>Roadmap</span>
-               <span>Process</span>
+               <span><a class="navLink" href="./tokenomics.html">Tokenomics</a></span>
+               <span><a class="navLink" href="#roadmapLink">Roadmap</a></span>
+               <span><a class="navLink" href="#roadmap">Process</a></span>
            </div>
            <div class="navRight">
-               <a class="navRightLink" href="#">Download Whitepaper</a>
-               <button class="headerButton">DApp Space</button>
+               <a class="navRightLink tooltip" href="#">Download Whitepaper
+                   <span class="tooltiptext">Coming Soon</span>
+               </a>
+               <button class="headerButton tooltip">DApp Space
+                   <span class="tooltiptext">Coming Soon</span>
+               </button>
            </div>
        </nav>
        <div class="mobile">
@@ -33,9 +41,9 @@
        </div>
        <div class="mobileBar">
            <div class="mobileLink">
-               <a href="#">Tokenomics</a>
-               <a href="#roadmap">Roadmap</a>
-               <a href="#why">Process</a>
+               <a href="./tokenomics.html">Tokenomics</a>
+               <a href="#roadmapLink">Roadmap</a>
+               <a href="#roadmap">Process</a>
                <a href="#">Download whitepaper</a>
            </div>
        </div>
@@ -109,7 +117,7 @@
                 </div>
             </div>
         </div>
-        <div class="infoTabTwo">
+        <div class="infoTab">
             <div class="infoBoxTwo">
                 <h3 class="infoHeading second">Trust</h3>
                 <p class="infoText">No more blind trust. Now, let there be a contract. Audited smart contracts would be used
@@ -220,7 +228,7 @@
 
     </section>
 
-    <section class="roadmap">
+    <section class="roadmap" id="roadmapLink">
         <p class="roadMapTitle">Roadmap</p>
 
         <div class="timeline">
@@ -290,21 +298,35 @@
             <div class="footerTab">
                 <div class="footerColumn">
                     <h5 class="footerHeading">About Us</h5>
-                    <span class="footerLinks">About KnoxHive</span>
-                    <span class="footerLinks">Smart Contracts</span>
-                    <span class="footerLinks">Privacy</span>
-                    <span class="footerLinks">Contact Us</span>
+                    <span class="footerLinks tooltip">About KnoxHive
+                         <span class="tooltiptext">Coming Soon</span>
+                    </span>
+                    <span class="footerLinks tooltip">Smart Contracts
+                         <span class="tooltiptext">Coming Soon</span>
+                    </span>
+                    <span class="footerLinks tooltip">Privacy
+                         <span class="tooltiptext">Coming Soon</span>
+                    </span>
+                    <a href="mailto:support@knoxhive.io" class="footerLinks">Contact Us</a>
                 </div>
                 <div class="footerColumn">
                     <h5 class="footerHeading">Services</h5>
-                    <span class="footerLinks"> Partnership</span>
-                    <span class="footerLinks"> Launchpad</span>
-                    <span class="footerLinks">Mutual funds</span>
-                    <span class="footerLinks">NFTs Fund</span>
+                    <a href="mailto:business@knoxhive.io" class="footerLinks">Partnership</a>
+                    <span class="footerLinks tooltip"> Launchpad
+                         <span class="tooltiptext">Coming Soon</span>
+                    </span>
+                    <span class="footerLinks tooltip">Mutual funds
+                         <span class="tooltiptext">Coming Soon</span>
+                    </span>
+                    <span class="footerLinks tooltip">NFTs Fund
+                         <span class="tooltiptext">Coming Soon</span>
+                    </span>
                 </div>
                 <div class="footerColumn">
                     <h5 class="footerHeading">Blog</h5>
-                    <span class="footerLinks"> Newsletter</span>
+                    <span class="footerLinks tooltip"> Newsletter
+                         <span class="tooltiptext">Coming Soon</span>
+                    </span>
                 </div>
                 <div class="footerColumn">
                     <h5 class="footerHeading">Community</h5>
@@ -324,8 +346,6 @@
             <p class="footerCreate">Knoxhive &copy; 2021</p>
             <p class="footerRights">All Rights Reserved</p>
         </div>
-
-
     </footer>
 </div>
 </body>

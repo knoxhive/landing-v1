@@ -92,6 +92,12 @@ header {
     transform: scale(1);
 }
 
+.navLink {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 968px) {
     .navMiddle {
         display: none;
@@ -120,18 +126,19 @@ header {
     outline: none;
     border: 1px solid white;
     margin: 0 10px;
+    cursor: pointer;
 }
 
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 80%;
     margin: 80px auto;
 }
 
 
-.heroTitle {
+.heroTitle , .heroTitleTwo {
     position: relative;
     margin: 25px 0;
     font-style: normal;
@@ -148,11 +155,26 @@ header {
     height: 5px;
     width: 26px;
     margin: 40px auto;
-   color: #1A8CDE;
+    color: #1A8CDE;
     background-color: #1A8CDE;
     border-radius: 20px;
-
 }
+
+.heroTitleTwo::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: 0;
+    height: 5px;
+    width: 26px;
+    margin: 40px auto;
+    color: #A17932;
+    background-color: #A17932;
+    border-radius: 20px;
+}
+
+
+
 
 .heroText {
     font-style: normal;
@@ -212,7 +234,7 @@ header {
         text-align: center;
     }
 
-    .heroTitle::before {
+    .heroTitle::before, .heroTitleTwo::before {
         display: none;
     }
 
@@ -224,7 +246,7 @@ header {
 .subHeader {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    width: 75%;
+    width: 80%;
     margin: 120px auto;
 }
 
@@ -666,7 +688,7 @@ header {
     font-size: 18px;
     line-height: 140%;
     color: #6C6B8E;
-    margin: 60px 0;
+    margin: 40px 0;
     z-index: 100;
 
 }
@@ -677,9 +699,12 @@ header {
     font-weight: 600;
     font-size: 18px;
     line-height: 140%;
-    margin: 30px 0;
-    display: grid;
-    place-items: center;
+    z-index: 100;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .iconCase {
@@ -711,11 +736,12 @@ header {
 
 .aboutBg {
     position: absolute;
+    display: block;
     top: 0;
     right: 0;
     height: 460px;
     width: 460px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 
 }
 
@@ -911,6 +937,7 @@ header {
 @media screen and (max-width: 968px) {
     .timeline {
         grid-template-columns: 1fr;
+        max-width: none;
     }
 
     .componentMiddle {
@@ -994,6 +1021,8 @@ header {
     font-size: 16px;
     line-height: 140%;
     margin: 10px 0;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .footerIconBox {
@@ -1046,4 +1075,33 @@ header {
         width: 22px;
         height: 22px;
     }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+}
+
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #272978;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 20%;
+    margin-left: -60px;
+
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+
 }

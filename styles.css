@@ -39,7 +39,7 @@ header {
 
 .navMiddle {
     display: flex;
-    flex: .4;
+    flex: .35;
     justify-content: space-between;
     align-items: center;
 }
@@ -350,7 +350,7 @@ header {
 }
 
 .sectionText {
-
+    position: relative;
 }
 
 .sectionHeader {
@@ -377,9 +377,15 @@ header {
     background: #0D0E3B;
     border-radius: 5px;
     border: none;
-    padding: 20px 50px;
+    padding: 22px 50px;
     margin: 25px 0;
-    width: 50%;
+    width: 45%;
+    transform: scale(1);
+    transition: all ease-in .3s;
+}
+
+.sectionButton:hover {
+    transform: scale(1.04);
 }
 
 .sectionImage {
@@ -428,7 +434,7 @@ header {
         font-size: 12px;
         line-height: 140%;
         padding: 20px;
-        width: 80%;
+        width: 90%;
     }
 
     .sectionBg {
@@ -1098,10 +1104,8 @@ header {
     bottom: 120%;
     left: 20%;
     margin-left: -60px;
-
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
-
 }

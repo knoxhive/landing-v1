@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="743df07a-3ef8-454a-a5e1-3cd4fa950f5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/token.css" beforeDir="false" afterPath="$PROJECT_DIR$/token.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tokenomics.html" beforeDir="false" afterPath="$PROJECT_DIR$/tokenomics.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +38,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -51,6 +53,8 @@
       <workItem from="1630417366684" duration="41328000" />
       <workItem from="1630658697517" duration="19873000" />
       <workItem from="1630865602319" duration="4756000" />
+      <workItem from="1631538466065" duration="4392000" />
+      <workItem from="1631617375911" duration="2460000" />
     </task>
     <servers />
   </component>
@@ -62,5 +66,9 @@
       <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state x="435" y="185" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.808@0.23.1440.808" timestamp="1630662930994" />
+    <state x="206" y="58" key="SettingsEditor" timestamp="1631617355889">
+      <screen x="0" y="25" width="1440" height="797" />
+    </state>
+    <state x="206" y="58" key="SettingsEditor/0.25.1440.797@0.25.1440.797" timestamp="1631617355889" />
   </component>
 </project>

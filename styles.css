@@ -7,6 +7,53 @@
     scroll-behavior: smooth;
 }
 
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px); }
+    80% {
+        transform: translateX(10px); }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0); }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem); }
+    80% {
+        transform: translateX(-1rem); }
+    100% {
+        opacity: 1;
+        transform: translate(0); }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem); }
+    100% {
+        opacity: 1;
+        transform: translate(0); }
+}
+
+@keyframes moveImage {
+    0% {
+        opacity: 0;
+        transform: translateX(5rem); }
+    100% {
+        opacity: 1;
+        transform: translate(0); }
+}
+
+@keyframes animateImage {
+
+    to {
+        transform: scale(1.08);
+    }
+}
+
    /*HEADER SECTION*/
 
 header {
@@ -32,14 +79,14 @@ header {
 }
 
 .nav {
-    padding: 20px 40px;
+    padding: 20px 10%;
     display: flex;
     justify-content: space-between;
 }
 
 .navMiddle {
     display: flex;
-    flex: .35;
+    flex: .4;
     justify-content: space-between;
     align-items: center;
 }
@@ -108,8 +155,9 @@ header {
     .navRight {
         display: flex;
         justify-content: space-between;
+        width: 40%;
     }
-    .navRightLink {
+    .navRight > a {
         display: none;
     }
 
@@ -133,7 +181,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 75%;
     margin: 80px auto;
 }
 
@@ -145,7 +193,9 @@ header {
     font-weight: bold;
     font-size: 42px;
     line-height: 140%;
+    animation: moveInRight 1s ease-in-out;
 }
+
 
 .heroTitle::before {
     content: "";
@@ -173,15 +223,17 @@ header {
     border-radius: 20px;
 }
 
-
-
-
 .heroText {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 180%;
     width: 85%;
+    animation: moveInLeft 1s ease-in-out;
+}
+
+.heroImage {
+    animation: moveImage 1.5s ease-in-out;
 }
 
 
@@ -212,6 +264,7 @@ header {
         line-height: 10px;
         padding: 10px;
         transition: all ease-in-out .3s;
+        width: 80%;
     }
 
     .thumbnail {
@@ -246,8 +299,10 @@ header {
 .subHeader {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    width: 80%;
+    width: 75%;
     margin: 120px auto;
+    animation: moveInBottom 1s ease-out;
+    animation-fill-mode: backwards;
 }
 
 .subItem {
@@ -343,7 +398,7 @@ header {
 
 .sectionCover {
     display: flex;
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     padding: 50px 0;
     z-index: 100;
@@ -382,6 +437,7 @@ header {
     width: 45%;
     transform: scale(1);
     transition: all ease-in .3s;
+    animation: moveInBottom 1s ease-out;
 }
 
 .sectionButton:hover {
@@ -392,6 +448,7 @@ header {
     height: 450px;
     width: 450px;
     z-index: 120;
+    animation: animateImage 1s infinite ease alternate;
 }
 
 
@@ -474,7 +531,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50%, 50%));
     place-items: center;
-    width: 80%;
+    width: 75%;
     margin: 100px auto;
 }
 
@@ -482,7 +539,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50%, 50%));
     place-items: center;
-    width: 80%;
+    width: 75%;
     margin: 100px auto;
 }
 
@@ -681,7 +738,7 @@ header {
 }
 
 .about {
-    width: 80%;
+    width: 75%;
     margin: 60px auto 150px;
     z-index: 100;
 }
@@ -709,7 +766,7 @@ header {
     position: relative;
     text-align: center;
     padding: 20px 0;
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -893,7 +950,7 @@ header {
 
 .timeline {
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 75%;
     padding: 0 25px;
     display: grid;
     grid-template-columns: 1fr 1px 1fr;
@@ -995,7 +1052,7 @@ header {
 }
 
 .footerBox {
-    width: 90%;
+    width: 85%;
     padding: 20px;
     margin: 0 auto;
 }
